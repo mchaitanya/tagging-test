@@ -11,6 +11,10 @@ app.get("/gtm", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "gtm.html"));
 });
 
+app.get("/gtag", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "gtag.html"));
+});
+
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`);
